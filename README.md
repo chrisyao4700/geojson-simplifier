@@ -75,5 +75,10 @@ Process Data
 ```
 //outputFolder: './docs/result'
 const simplifiedData = await testArea.processData(hookMap, {outputFolder: outPath, doExport: true});
-
 ```
+
+Before
+![Before](https://user-images.githubusercontent.com/8865339/134125030-e3202fde-cd98-4dc7-86a9-e5fe3c30483e.png)
+
+After
+![After](https://user-images.githubusercontent.com/8865339/134125040-d8c1477b-ecb0-4886-be09-88f7203be794.png)
