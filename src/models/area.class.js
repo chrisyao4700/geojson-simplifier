@@ -91,7 +91,7 @@ class Area {
             const finalFeatures = Object.values(this.finalMap).reduce((acc, curr) => [...acc, ...curr.features], []);
             this.finalFeatures = finalFeatures;
 
-            this.finalGeo = {type: "FeatureCollections", features: finalFeatures};
+            this.finalGeo = {type: "FeatureCollection", features: this.finalFeatures};
             this.isProcessed = true;
             if (doExport) {
                 if (this.hookMap.willStartExportFile) this.hookMap.willStartExportFile(this.getProcessTime());
@@ -133,7 +133,7 @@ class Area {
                 if (didExportArea) didExportArea(orgPath, 'final');
 
             }
-            
+
             const completePath = func.resolvePath([outputFolder, 'COMPLETE', `${this.fileIdx}-v${this.versionCode}-complete.json`]);
             await func.writeJSONToFile(completePath, this.finalGeo);
             if (didExportComplete) {
