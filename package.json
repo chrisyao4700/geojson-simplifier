@@ -1,12 +1,25 @@
 {
   "name": "geojson-simplifier",
   "version": "1.0.0",
-  "description": "",
+  "description": "Merge feature.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "author": "Chris Yao",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://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@github.com/chrisyao4700/geojson-simplifier.git"
+  },
+  "bugs": {
+    "url": "https://github.com/chrisyao4700/geojson-simplifier/issues"
+  },
+  "homepage": "https://github.com/chrisyao4700/geojson-simplifier#readme",
+  "dependencies": {
+    "@turf/turf": "^6.5.0",
+    "fs": "0.0.1-security",
+    "path": "^0.12.7"
+  }
 }
